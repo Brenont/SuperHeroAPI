@@ -32,19 +32,9 @@ header {
   border-bottom: 0.5px #1269dc solid;
 }
 
-header a {
-  display: flex;
-  align-self: flex-end;
-  padding: 5px;
-  margin: 0 10px 10px 0;
-  background-color: transparent;
-  border: #1269dc 2px solid;
-  color: #1269dc;
-  cursor: pointer;
-}
 
 .search-container {
-  height: calc(100vh - 113px);
+  height: calc(100vh - 65px);
   margin: 0 10px;
   display: flex;
   flex-direction: column;
