@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #131313;
+  color: #eff7fd;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+input:focus, button:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #1269dc;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 4px 0;
+  border-bottom: 0.5px #1269dc solid;
+}
+
+header a {
+  display: flex;
+  align-self: flex-end;
+  padding: 5px;
+  margin: 0 10px 10px 0;
+  background-color: transparent;
+  border: #1269dc 2px solid;
+  color: #1269dc;
+  cursor: pointer;
+}
+
+.search-container {
+  height: calc(100vh - 113px);
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.search-container h2 {
+  font-size: 22px;
+}
+
+.search-container .input-id {
+  margin: 20px;
+  width: 200px;
+  padding: 5px 15px;
+  font-size: 18px;
+  background: transparent;
+  border: #1269dc 1px solid;
+  border-radius: 10px;
+  color: #eff7fd;
+  text-align: center;
+}
+
+.search-container .btn-hero {
+  background-color: #1269dc;
+  border: #eff7fd 1px solid;
+  padding: 8px;
+  color: #eff7fd;
+  border-radius: 10px;
+}
+
+.hero-container {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  background-color: #131313fa;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.hero-container img {
+  width: 220px;
+  height: auto;
+  border: 1px #1269dc solid;
+  margin: 35px 0 10px;
+}
+
+.hero-container h3{
+  text-align: center;
+  font-size: 24px;
+}
+
+.hero-container h3, .hero-container .info-hero{
+  width: 85%;
+  max-width: 450px;
+}
+
+.hero-container .info-hero{
+  margin:  8px 0;
+}
+
+.hero-container .info-hero h1{
+  font-size: 26px;
+  border-bottom: #1269dc 1px solid;
+  text-align: center;
+  padding-bottom: 2px;
+}
+
+.hero-container .info-hero p{
+  margin-bottom: 7px;
+}
+
+.hero-container .powerstats p {
+  text-transform: capitalize;
+}
+
+.progress {
+  margin-bottom: 10px;
+}
+
+.progress-bar{
+  background-color: #1269dc;
+}
+
+.closer-hero {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  border: 2px solid #1269dc;
+  background-color: #131313;
+  border-radius: 50px;
+  position: fixed;
+  right: 35px;
+  top: 25px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+#open-hero {
+  display: flex;
+  animation: fadeAnimation 0.5s linear;
+}
+
+@keyframes fadeAnimation {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
